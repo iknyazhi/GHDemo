@@ -32,7 +32,7 @@ jobs:
       run: mkdir build
       
     - name: Configure project   
-      run: cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S . -B build
+      run: cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S . -B .
 
     # Builds your CMake project. (This step is optional, as it is not required for code analysis).
     - name: Build project (optional)
