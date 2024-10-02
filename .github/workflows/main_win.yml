@@ -44,7 +44,7 @@ jobs:
       # Optional parameters for 'run-cpptest-action'.
       with:
         #install path
-        installDir: 'C:\Parasoft\Tools\cpptest_std_2023.2.1'
+        installDir: 'C:\Parasoft\Tools\cpptest_std_2023.2.1\cpptest'
         #licensing
         additionalParams: '-localsettings ~/config.properties'
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
