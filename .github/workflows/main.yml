@@ -44,6 +44,7 @@ jobs:
       uses: parasoft/run-cpptest-action@1.0.1
       # Optional parameters for 'run-cpptest-action'.
       with:
+        installDir: '/home/igork/Parasoft/cpptest_standard-2024.1.0/cpptest'
         #licensing
         additionalParams: '-localsettings ~/config.properties'
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
