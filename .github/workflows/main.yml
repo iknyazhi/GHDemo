@@ -47,7 +47,8 @@ jobs:
         #Added - install dir
         installDir: '/home/igork/Parasoft/cpptest_standard-2024.1.0/cpptest'
         #licensing
-        additionalParams: '-localsettings ~/config.properties'
+        #Added - commented out the next line
+        #additionalParams: '-localsettings ~/config.properties'
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
         input: compile_commands.json
         testConfig: builtin://MISRA C 2023 (MISRA C 2012)
