@@ -1,13 +1,12 @@
-
 # This is a basic workflow to help you get started with the Run C/C++test action for a CMake-based project.
 name: C/C++test with CMake
 
 on:
   # Triggers the workflow on push or pull request events but only for the master (main) branch.
-  push:
-    branches: [ master, main ]
-  pull_request:
-    branches: [ master, main ]
+  #push:
+   # branches: [ master, main ]
+  #pull_request:
+   # branches: [ master, main ]
 
   # Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
@@ -44,11 +43,10 @@ jobs:
       uses: parasoft/run-cpptest-action@1.0.1
       # Optional parameters for 'run-cpptest-action'.
       with:
-        #Added - install dir
-        installDir: '/home/igork/Parasoft/cpptest_standard-2024.1.0/cpptest'
+        #install path
+        installDir: 'C:\Parasoft\Tools\cpptest_std_2023.2.1\cpptest'
         #licensing
-        #Added - commented out the next line
-        #additionalParams: '-localsettings ~/config.properties'
+        additionalParams: '-localsettings ~/config.properties'
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
         input: compile_commands.json
         testConfig: builtin://MISRA C 2023 (MISRA C 2012)
@@ -70,4 +68,3 @@ jobs:
       with:
         name: Static analysis reports
         path: reports/*.*
-
