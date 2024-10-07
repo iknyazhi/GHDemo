@@ -8,7 +8,7 @@
 #include "inout.h"
 
 /**** */
- * Print the current time
+ /* Print the current time
  */
 void display_time()
 {
